@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "../testDist",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "baseUrl": "../",
+    "rootDir": "../",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ],
+    }
+  },
+  "include": [
+    "../src/**/*",
+    "../test/**/*"
+  ]
+}

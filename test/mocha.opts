@@ -1,0 +1,5 @@
+--allow-uncaught
+--exit
+--timeout 5000
+--slow 100
+testDist/test/case/index.js

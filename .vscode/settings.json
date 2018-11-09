@@ -1,0 +1,36 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "tslint.autoFixOnSave": true,
+  "files.exclude": {
+    "public": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "conf": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "build": true,
+    "shared": true,
+    "dist": true,
+    "testDist": true,
+    "*.log": true,
+    ".nyc_output": true,
+    "*.out": true,
+    "node_modules": true,
+    "**/.DS_Store": true,
+    "*.rdb": true,
+    "**/node_modules": true,
+    "/node_modules": true,
+    "/node_modules/": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    }
+  },
+  "search.exclude": {
+    "/node_modules": true,
+    "/dist": true,
+    "/testDist": true
+  },
+  "files.useExperimentalFileWatcher": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

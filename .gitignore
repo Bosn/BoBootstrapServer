@@ -1,0 +1,22 @@
+# Logs
+.nyc_output
+logs
+*.log
+npm-debug.log*
+.DS_Store
+dump.rdb
+
+# Build directory
+/dist
+/testDist
+
+# Dependency directory
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+nohup.out
+
