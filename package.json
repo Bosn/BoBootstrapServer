@@ -38,7 +38,6 @@
   "homepage": "https://github.com/Bosn/BoBootstrapServer#readme",
   "dependencies": {
     "@alicloud/sms-sdk": "^1.1.6",
-    "@types/md5": "^2.1.33",
     "ali-oss": "^6.0.1",
     "bcrypt-nodejs": "latest",
     "body-parser": "~1.18.3",
@@ -76,6 +75,7 @@
     "xss": "^1.0.3"
   },
   "devDependencies": {
+    "@types/md5": "^2.1.33",
     "@types/body-parser": "^1.17.0",
     "@types/chai": "^4.1.7",
     "@types/chai-http": "^3.0.5",

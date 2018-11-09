@@ -7,7 +7,7 @@ import * as md5 from 'md5'
 import { Sequelize } from 'sequelize-typescript'
 import lib from './Lib'
 import sequelize from '../models/sequelize'
-import RedisService, { CACHE_KEY, PUBLIC_MEMBER_KEYS, PUBLIC_EMPLOYEE_KEYS } from './RedisService'
+import RedisService, { CACHE_KEY } from './RedisService'
 
 const utils = lib.utils
 const Op = Sequelize.Op
@@ -248,13 +248,7 @@ export default class MembershipService {
     return result
   }
 
-  public static isPublicUserSettingKeys(entityType: ENTITY_TYPE, keys: CACHE_KEY[]): boolean {
-    for (const key of keys) {
-      if ((entityType === ENTITY_TYPE.CUSTOMER && PUBLIC_MEMBER_KEYS.indexOf(key) === -1) ||
-        (entityType === ENTITY_TYPE.EMPLOYEE && PUBLIC_EMPLOYEE_KEYS.indexOf(key) === -1)) {
-        return false
-      }
-    }
+  public static isPublicUserSettingKeys(_entityType: ENTITY_TYPE, _keys: CACHE_KEY[]): boolean {
     return true
   }
 
